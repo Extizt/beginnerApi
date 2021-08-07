@@ -27,8 +27,7 @@ body {
     padding: 1em 2em;
     font-size: 1em;
     transition: color 0.25s, box-shadow 0.25s, transform 0.25s;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 #jokeButton:hover, #clearJokes:hover {
