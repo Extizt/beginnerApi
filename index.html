@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <title>API Application</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title is-1">Click Below to get a Joke</h1>
+            <div>
+                <button id="jokeButton">Generate Joke</button>
+                <button id="clearJokes">Delete Jokes</button>
+            </div>
+            <div class="content">
+                <ul id="jokes"></ul>
+            </div>
+            <h1 class="title is-1">Search for a TV Show</h1>
+            <form>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Find a TV Show" name="query">
+                    </div>
+                    <div class="control">
+                        <button class="button is-info" type="submit">
+                            Search
+                        </button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-danger" type="button" id="clearShows">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="content" id="tvshows"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>

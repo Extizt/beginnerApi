@@ -1,0 +1,49 @@
+body {
+    background-color: #1f1b29;
+    min-height: 100vh;
+}
+
+.container {
+    font-family: Roboto sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 5% 5%;
+}
+
+.title {
+    color: #a0b163;
+}
+
+.content {
+    color: gainsboro;
+}
+
+#jokeButton, #clearJokes {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, box-shadow 0.25s, transform 0.25s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#jokeButton:hover, #clearJokes:hover {
+    border-color: greenyellow;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em greenyellow;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+#tvshows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
